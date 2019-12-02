@@ -55,7 +55,16 @@ public class Main {
             System.out.println();
         }
     }
-   
+    public static void Pattern4(){
+
+        for (int times =7; times > 1; times++) {
+
+            for (int columns =times; columns <7; columns++){
+                System.out.print(columns);
+            }
+            System.out.println();
+        }
+    }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
         int[] array = new int[size];
