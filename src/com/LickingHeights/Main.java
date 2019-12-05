@@ -16,8 +16,8 @@ public class Main {
          //Pattern4();
          //Pattern5();
         
-        System.out.println("The sum of the array is " + sum(array));
-
+//        System.out.println("The sum of the array is " + sum(array));
+        System.out.println("The minimum of the array is " + minimum(array));
     }
 
     public static void Pattern1(){
@@ -90,6 +90,18 @@ public class Main {
         return sum;
     }
 
+    public static int minimum(int[] array) {
+        int minimum=array[0];
+
+        for(int i=0; i<array.length; i++) {
+            if (minimum<array[i]) {
+                array[i] = minimum;
+            }
+
+            minimum = array[i];
+        }
+        return minimum;
+    }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
         int[] array = new int[size];
