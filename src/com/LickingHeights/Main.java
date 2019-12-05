@@ -16,7 +16,7 @@ public class Main {
          //Pattern4();
          //Pattern5();
         
-        
+        System.out.println("The sum of the array is " + sum(array));
 
     }
 
@@ -81,6 +81,14 @@ public class Main {
     }
 
 
+    public static int sum(int[] array) {
+        int sum=0;
+
+        for(int i=0; i<array.length; i++) {
+            sum += array[i];
+        }
+        return sum;
+    }
 
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
