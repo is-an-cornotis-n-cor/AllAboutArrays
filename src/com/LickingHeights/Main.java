@@ -23,6 +23,12 @@ public class Main {
 
         System.out.println("After Bubble Sort");
         printArray(bubbleSort(array));
+        String[] adjectives = {"red", "scary", "hairy", "blue"  };
+        String[] places = {"Europe", "Kansas", "Columbus", "Seeker City"};
+        String[] people = {"James Bond", "Arnold Schwarzenegger", "Bob Ross", "Stan Lee"};
+        String[] verb = {"climbing", "hurting", "rapping", "running"};
+        String[] times = {"Noon", "Morning", "Evening", "Night"};
+        String[] things = {"Canned coochie", "Dry Erase Marker", "Rooster", "Female Dog"};
     }
 
     public static void Pattern1() {
