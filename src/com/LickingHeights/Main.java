@@ -1,5 +1,7 @@
 package com.LickingHeights;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -7,6 +9,13 @@ public class Main {
         int size = 10;
         int lowestNumber = 0;
         int highestNumber = 10;
+//       sentence generator
+
+//80s rapper name
+        String[] partsOfAName1 = {"-Juan", "-Harold", "-Billy", "-Mohamed", };
+        String[] partsOfAName2 = {" Charles", " Mohamed", " Kourt", " Hoff"};
+        String[] partsOfAName3 = {" Kilpatrick", "Demesey", " Yadessa", " Mohamed",};
+
 
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
@@ -18,17 +27,25 @@ public class Main {
 
 //        System.out.println("The sum of the array is " + sum(array));
 //        System.out.println("The minimum of the array is " + minimum(array));
-        printArray(array);
+        //printArray(array);
         //System.out.println("The maximum of the array is " + maximum(array));
 
-        System.out.println("After Bubble Sort");
-        printArray(bubbleSort(array));
-        String[] adjectives = {"red", "scary", "hairy", "blue"  };
-        String[] places = {"Europe", "Kansas", "Columbus", "Seeker City"};
-        String[] people = {"James Bond", "Arnold Schwarzenegger", "Bob Ross", "Stan Lee"};
+        //System.out.println("After Bubble Sort");
+        //printArray(bubbleSort(array));
         String[] verb = {"climbing", "hurting", "rapping", "running"};
+        String[] places = {"Europe", "Kansas", "Columbus", "Seeker City"};
         String[] times = {"Noon", "Morning", "Evening", "Night"};
+        String[] people = {"James Bond", "Arnold Schwarzenegger", "Bob Ross", "Stan Lee"};
+
+        String[] adjectives = {"red", "scary", "hairy", "blue"  };
+
+
+
+
         String[] things = {"Canned coochie", "Dry Erase Marker", "Rooster", "Female Dog"};
+        sentenceGenerator(verb,places, times, people, adjectives, things );
+
+
     }
 
     public static void Pattern1() {
@@ -149,6 +166,24 @@ public class Main {
 
     }
 
+    public static String randomWord(String[] array) {
+        Random random = new Random();
+        return array[random.nextInt(array.length)];
+
+    }
+    public static void sentenceGenerator(String[] verb, String[] places, String[] times, String[] people, String[] adjectives, String[] things ) {
+
+        System.out.print( "I was " +randomWord(verb)+ " down the " +randomWord(places)+
+                " around " +randomWord(times)+ " with my best friend " +randomWord(people)+
+                " and we "+randomWord(verb)+ " a "+randomWord(adjectives) + " " + randomWord(things)+
+                " that was "+randomWord(verb)+ " "+ randomWord(things)+"s");
+
+    }
+    public static void print80sRapperName(String[] partsOfAName1, String[] partsOfAName2, String[] partsOfAName3) {
+
+
+        System.out.print(randomWord(partsOfAName1)+  randomWord(partsOfAName2)+ randomWord(partsOfAName3));
+    }
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
         int[] array = new int[size];
 
@@ -171,6 +206,7 @@ public class Main {
         int number = (int) ((Math.random() * (highestNumber - lowestNumber + 1)) + lowestNumber);
         return number;
     }
+
 
 
 }
