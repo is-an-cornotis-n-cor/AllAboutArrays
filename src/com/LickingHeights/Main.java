@@ -178,7 +178,11 @@ public class Main {
                 " that was "+randomWord(verb)+ " "+ randomWord(things)+"s");
 
     }
-    
+    public static void print80sRapperName(String[] partsOfAName1, String[] partsOfAName2, String[] partsOfAName3) {
+
+
+        System.out.print(randomWord(partsOfAName1)+  randomWord(partsOfAName2)+ randomWord(partsOfAName3));
+    }
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
         int[] array = new int[size];
 
