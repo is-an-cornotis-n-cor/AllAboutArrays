@@ -12,10 +12,9 @@ public class Main {
 //       sentence generator
 
 //80s rapper name
-        String[] partsOfAName1 = {"-Juan", "-Harold", "-Billy", "-Mohamed", };
+        String[] partsOfAName1 = {"-Juan", "-Harold", "Billy", "-Mohamed", };
         String[] partsOfAName2 = {" Charles", " Mohamed", " Kourt", " Hoff"};
         String[] partsOfAName3 = {" Kilpatrick", "Demesey", " Yadessa", " Mohamed",};
-
 
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
@@ -25,13 +24,13 @@ public class Main {
         //Pattern4();
         //Pattern5();
 
-//        System.out.println("The sum of the array is " + sum(array));
-//        System.out.println("The minimum of the array is " + minimum(array));
+        System.out.println("The sum of the array is " + sum(array));
+        System.out.println("The minimum of the array is " + minimum(array));
         //printArray(array);
-        //System.out.println("The maximum of the array is " + maximum(array));
-
+        System.out.println("The maximum of the array is " + maximum(array));
+          //printArray(array);
         //System.out.println("After Bubble Sort");
-        //printArray(bubbleSort(array));
+       //printArray(bubbleSort(array));
         String[] verb = {"climbing", "hurting", "rapping", "running"};
         String[] places = {"Europe", "Kansas", "Columbus", "Seeker City"};
         String[] times = {"Noon", "Morning", "Evening", "Night"};
@@ -44,7 +43,7 @@ public class Main {
 
         String[] things = {"Canned coochie", "Dry Erase Marker", "Rooster", "Female Dog"};
         sentenceGenerator(verb,places, times, people, adjectives, things );
-
+        //print80sRapperName(partsOfAName1, partsOfAName2, partsOfAName3);
 
     }
 
@@ -53,7 +52,7 @@ public class Main {
         for (int times = 0; times < 6; times++) {
 
             for (int columns = 0; columns < 6; columns++) {
-                System.out.print("*");
+                System.out.print("Yadessa Wolteji ");
             }
             System.out.println();
         }
@@ -179,11 +178,7 @@ public class Main {
                 " that was "+randomWord(verb)+ " "+ randomWord(things)+"s");
 
     }
-    public static void print80sRapperName(String[] partsOfAName1, String[] partsOfAName2, String[] partsOfAName3) {
-
-
-        System.out.print(randomWord(partsOfAName1)+  randomWord(partsOfAName2)+ randomWord(partsOfAName3));
-    }
+    
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
         int[] array = new int[size];
 
